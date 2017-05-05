@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Single Page Application</title>
+	 <link rel = "stylesheet"
+	   type = "text/css"
+	   href = "external/ng-grid/ng-grid.css" /> 
+	<link rel = "stylesheet"
+	   type = "text/css"
+	   href = "styles/style.css" />
+   
+	<script src="external/jquery/jquery.min.js"></script> 
+	<!-- <script src="external/angular-1.6.4/angular-resource.js"></script> -->
+	<script src="external/angular-1.4.8/angular.js"></script>
+	<script src="external/ng-grid/ng-grid-1.3.2.js"></script> 
+	<script src="external/angular-1.4.8/angular-route.js"></script>
+	<script src="app.js"></script> 
+
+</head>
+<body ng-app="myApp">
+<!-- ng-controller='IsoCtrl' -->
+	<!-- ng-controller="MainCtrl" -->
+	 
+
+   <h2></h2>
+   
+   <!-- <editor ng-model="foo" minlength="3"></editor> -->
+   <!-- <text-editor ng-model=foo> </text-editor>  -->
+   
+   <isolated-scope iso="{{ iso }}"></isolated-scope> 
+   
+   
+   
+ 	<p><a href="#/">Main</a></p>
+	
+	<a href="#talks">Show Talks</a>
+	<a href="#heelomsg">Add Talks</a> 
+	
+	<div ng-view></div>
+
+</body>
+</html>

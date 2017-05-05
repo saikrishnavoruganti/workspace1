@@ -1,0 +1,7 @@
+describe ("Sample test", function(){
+	it("adding two numbers", function ()
+	{
+		
+	});
+	except(Add(2,4)).tobe(6);
+});

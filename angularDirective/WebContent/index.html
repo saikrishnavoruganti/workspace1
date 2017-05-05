@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+         <script src="https://code.jquery.com/jquery-1.8.2.js" integrity="sha256-z6aVFjdeJ+VlGcrnHyiBjg5SUVtw5wWmANHbRZmYM1o=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/ng-grid/2.0.11/ng-grid.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ng-grid/2.0.11/ng-grid.css"></script>
+         <script type="text/javascript" src="app.js"></script>
+
+</head>
+<body ng-app="myApp" ng-controller="myCntrl">
+{{Name}}
+<br><my-directive ngModel=Name></my-directive>
+<div>
+<!-- <a href="#/index">index</a>
+ --><a href="#/page1">Page 1</a>
+<a href="#/page2">Page 2</a>
+
+<p>Click on the links to read Page1 and Page2</p>
+<div ng-view></div>
+</div>
+</body>
+</html>

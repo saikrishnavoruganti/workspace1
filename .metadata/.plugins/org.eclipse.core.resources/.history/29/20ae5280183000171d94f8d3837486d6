@@ -1,0 +1,10 @@
+describe("angular testing", function(){
+	it("controller testing", function(){
+		var scope{};
+		module("myApp");
+		inject(function($controller){
+			$controller("myCntrl",{$scope: scope});
+		});
+		expect(scope.name).toBe("tom");
+	});
+});

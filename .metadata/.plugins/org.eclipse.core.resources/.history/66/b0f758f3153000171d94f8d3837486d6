@@ -1,0 +1,7 @@
+describe ("Sample test", function(){
+	it("adding two numbers", function ()
+	{
+		expect(add(2,4)).tobe(6);
+	});
+	
+});
